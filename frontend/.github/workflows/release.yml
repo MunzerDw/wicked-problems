@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - develop
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull, delete and run image
+        uses: JimCronqvist/action-ssh@master
+        with:
+          hosts: 'munzer@${{ secrets.DEVELOPMENT_HOST }}'
+          privateKey: ${{ secrets.MUNZER_SSH_PRIVATE_KEY }}
+          debug: false
+          command: |
+            docker stop frontend
+            docker rm frontend
+            docker image rm frontend
+            docker build -t frontend:latest https://${{ secrets.PRIVATE_TOKEN }}@github.com/MunzerDw/wicked-problems-frontend.git#develop
+            docker-compose up -d frontend
