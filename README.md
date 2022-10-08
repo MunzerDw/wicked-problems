@@ -1,5 +1,7 @@
 # [wickedproblems.io](wickedproblems.io)
 
+<p align="center"><img width="700" src="./docs/canvas.png"></p>
+
 This project is part of my Bachelor's thesis where I developed an application (frontend & backend) for visualizing wicked problems. During development, I had 2 separate repositories for frontend and backend. However, since they include Github secrets and have a long commit history, I put both codes into this one repository. You can visit <https://wickedproblems.io> and create an account. Please note that it is not mobile responsive. The application is being used today by the chair of Information Systems at the department of informatics at Technical University of Munich.
 
 ## Frontend
