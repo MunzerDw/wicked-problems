@@ -33,4 +33,4 @@ yarn dev
 
 ## Development details
 
-I included the [pages of my thesis](https://github.com/MunzerDw/wicked-problems/blob/main/docs/development_details.pdf) where I explain in details how the application was built.
+I included the [pages of my thesis](https://github.com/MunzerDw/wicked-problems/blob/main/docs/development_details.pdf) where I explain in detail how the application was built.
