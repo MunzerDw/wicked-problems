@@ -28,7 +28,7 @@ yarn
 ```
 2. run code in dev environment
 ```shell
-yarn dev
+yarn develop
 ```
 
 ## Development details
